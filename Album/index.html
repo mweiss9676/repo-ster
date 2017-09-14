@@ -7,7 +7,7 @@
 
           * {
               text-align: center;
-          }     
+            }     
 
           #title {font-family: Poppins, sans-serif; text-transform: uppercase; font-weight: bold; font-size: 200%;}
 
@@ -23,6 +23,18 @@
 
           .italic {font-style: italic;}
 
+          a {padding: 0.5em;}
+          a:link {text-decoration: none;}
+          a:visited {text-decoration: none;}
+          a:hover {text-decoration: underline; background-color: #D1EBFB;}
+          a:active {text-decoration: none;}
+
+          @media only screen and (min-width: 999px) {
+              .list {padding-left: 10em; padding-bottom: 2em; padding-top: 2em;}
+          }
+
+          tbody {font-style: italic; background-color: ghostwhite;}
+
           ul li {
               text-align: left;
               padding-left: 10em;
@@ -36,12 +48,14 @@
           table, td, th {
                border: 1px;
                border-style: solid;
+               padding: 5px 5px;
           }  
 
           table {
               border-spacing: 0;
               margin: auto;
-              width: 85%;
+              width: 60%;
+              border-collapse: collapse;
           }
 
           th {
@@ -89,71 +103,75 @@
             </ul>
             </div>
             <table>
-                <tr>
+                <thead>
+                  <tr>
                     <th>Track #</th>
                     <th colspan="3">Track Title</th>
                     <th colspan="6">Track Length</th>
-                </tr>
-                <tr>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
                     <td>1</td>
                     <td colspan="3">Never Ending Math Equation</td>
                     <td colspan="6">3:23</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>2</td>
-                    <td colspan="3">Int:erstate 8</td>
+                    <td colspan="3">Interstate 8</td>
                     <td colspan="6">4:39</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>3</td>
                     <td colspan="3">Broke</td>
                     <td colspan="6">3:19</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>4</td>
                     <td colspan="3">Medication</td>
                     <td colspan="6">5:01</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>5</td>
                     <td colspan="3">Workin' on Leavin' the Livin'</td>
                     <td colspan="6">6:40</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>6</td>
                     <td colspan="3">All Night Diner</td>
                     <td colspan="6">4:44</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>7</td>
                     <td colspan="3">Baby Blue Sedan</td>
                     <td colspan="6">4:04</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>8</td>
                     <td colspan="3">A Life of Arctic Sounds</td>
                     <td colspan="6">2:29</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>9</td>
                     <td colspan="3">Sleepwalking</td>
                     <td colspan="6">3:23</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>10</td>
                     <td colspan="3">Grey Ice Water</td>
                     <td colspan="6">5:05</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>11</td>
                     <td colspan="3">Whenever You Breathe Out, I Breathe In</td>
                     <td colspan="6">5:18</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>12</td>
                     <td colspan="3">Other People's Lives</td>
                     <td colspan="6">7:10</td>
-                </tr>
+                  </tr>
+                </tbody>
             </table>
         </p>
     </body>
