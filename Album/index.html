@@ -2,9 +2,26 @@
 <html>
     <head>
         <style>
+
+          @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto');
+
           * {
               text-align: center;
           }     
+
+          #title {font-family: Poppins, sans-serif; text-transform: uppercase; font-weight: bold; font-size: 200%;}
+
+          #band-mems {font-family: Roboto, sans-serif;}
+
+          .album-cover {
+              background-image: url(bnoos.jpg);
+              background-position: 50%;
+              background-repeat: no-repeat;
+              background-size: autos;
+              height: 30em;
+          }
+
+          .italic {font-style: italic;}
 
           ul li {
               text-align: left;
@@ -31,9 +48,9 @@
               background-color: lightgray;
           }
 
-          img {
+          /*img {
               width: 23em;
-          }
+          }*/
 
           @media only screen and (max-width: 1000px) {
               .list {
@@ -53,21 +70,22 @@
         </style>
     </head>
     <body>
-        <img src="bnoos.jpg" alt="Building Nothing Out of Something cover">
+        <div class="album-cover">
+        </div>
         <p>
-            <h1>Album Title</h1>
-            <a href="https://www.modestmouse.com">Band Name</a>
+            <h1 id="title">Building Nothing Out of Something</h1>
+            <a href="https://www.modestmouse.com">Modest Mouse</a>
             <p>Release Date</p>
         </p>
         <hr>
         <p>
-            <h2>Band Members and Producers</h2>
+            <h2 id="band-mems">Band Members and Producers</h2>
             <div class="list">
             <ul>
-                <li>Isaac Brock - Guitar, Vocals</li>
-                <li>Eric Judy - Bass</li>
-                <li>Jerimiah Green - Drums</li>
-                <li>Calvin Johnson - Producer, Engineer</li>
+                <li><span class="italic">Isaac Brock</span> - Guitar, Vocals</li>
+                <li><span class="italic">Eric Judy</span> - Bass</li>
+                <li><span class="italic">Jerimiah Green</span> - Drums</li>
+                <li><span class="italic">Calvin Johnson</span> - Producer, Engineer</li>
             </ul>
             </div>
             <table>
